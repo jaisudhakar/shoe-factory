@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VOLT — Air-light. Lightning fast.</title>
+  <meta name="description" content="VOLT Runner X1 — next gen performance sneakers built for a brighter tomorrow.">
+  <meta name="theme-color" content="#090c0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-exploded.webp">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/home.js"></script>
+</head>
+<body data-page="home">
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__logo">VOLT</div>
+      <div class="loader__pct mono">Charging <span data-pct>0</span>%</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-slide="0" aria-roledescription="carousel" aria-label="Featured drops">
+      <div class="hero__bg"></div>
+      <canvas class="hero__canvas"></canvas>
+      <div class="hero__floor">
+        <div class="rocks rocks--l"><img src="assets/img/rocks-left.webp" alt=""></div>
+        <div class="rocks rocks--r"><img src="assets/img/rocks-right.webp" alt=""></div>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="mono hero__eyebrow intro" style="--d:.1s" data-slide-text="eyebrow">// Next gen moves</p>
+          <h1 class="hero__title" data-slide-text="title">
+            <span class="l1">Air-light.</span><br>
+            <span class="l2">Lightning fast.</span>
+          </h1>
+          <p class="hero__model intro" style="--d:.7s" data-slide-text="model">VOLT RUNNER X1</p>
+
+          <ul class="hero__stats intro" style="--d:.9s">
+            <li><span class="mono">Speed</span><span class="bars" data-stat="speed"></span></li>
+            <li><span class="mono">Cushion</span><span class="bars" data-stat="cushion"></span></li>
+            <li><span class="mono">Stability</span><span class="bars" data-stat="stability"></span></li>
+          </ul>
+          <div class="hero__tagline intro" style="--d:1.05s">
+            <p class="mono">Built for<br>a brighter tomorrow</p>
+          </div>
+        </div>
+
+        <div class="hero__stage" data-drag>
+          <div class="shoe">
+            <div class="shoe__float">
+              <div class="shoe__img is-active" data-shoe="0"><img src="assets/img/hero-exploded.webp" alt="Volt Runner X1 exploded view: knit upper, cushion lattice midsole, carbon plate and grip outsole"></div>
+              <div class="shoe__img shoe__img--product" data-shoe="1"><img src="assets/img/runner-x1.webp" alt="Volt Runner X1 in Hot Pink" style="filter:hue-rotate(180deg) saturate(1.15)"></div>
+              <div class="shoe__img shoe__img--product" data-shoe="2"><img src="assets/img/strato-run.webp" alt="Strato Run in Ultra Violet"></div>
+            </div>
+          </div>
+
+          <a href="product.html?id=volt-runner-x1#tech" class="callout callout--a">
+            <svg width="120" height="60" viewBox="0 0 120 60"><path d="M0 60 L40 60 L80 14 L120 14"/><circle cx="0" cy="60" r="4"/></svg>
+            <span class="callout__card"><span>Cushion lattice</span><img src="assets/img/tech-cushion.webp" alt=""></span>
+          </a>
+          <a href="product.html?id=volt-runner-x1#tech" class="callout callout--b">
+            <svg width="130" height="20" viewBox="0 0 130 20"><path d="M0 10 L130 10"/><circle cx="0" cy="10" r="4"/></svg>
+            <span class="callout__card"><span>Carbon plate</span><img src="assets/img/tech-carbon.webp" alt=""></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__cta intro" style="--d:1.2s">
+        <a href="product.html?id=volt-runner-x1" class="btn btn--mint btn--lg" data-magnetic data-hero-cta>
+          <span>Shop the drop — <span class="price-swap"><span>$189</span></span></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="container hero__foot">
+        <div class="slider-nav intro" style="--d:1.3s">
+          <div class="slider-nav__count"><b data-count>01</b> / 03</div>
+          <div class="slider-nav__bars">
+            <button aria-label="Slide 1" class="is-active"><i></i></button>
+            <button aria-label="Slide 2"><i></i></button>
+            <button aria-label="Slide 3"><i></i></button>
+          </div>
+        </div>
+        <a href="#tech" class="scroll-hint intro" style="--d:1.4s"><span class="mouse"></span>Scroll to explore</a>
+        <div class="hero__motto intro" style="--d:1.5s"><p class="mono">Higher<br>Further<br>Faster</p></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Next gen moves</span><span>Air-light</span><span>Lightning fast</span><span>Built for tomorrow</span>
+        <span>Next gen moves</span><span>Air-light</span><span>Lightning fast</span><span>Built for tomorrow</span>
+      </div>
+    </div>
+
+    <!-- ============ TECH (sticky scroll) ============ -->
+    <section class="tech" id="tech" data-step="0">
+      <div class="container tech__sticky">
+        <div>
+          <p class="mono" data-reveal>// Engineered in layers</p>
+          <h2 class="section-title" data-split>Three layers. <span class="mint">One charge.</span></h2>
+          <ol class="tech__list">
+            <li class="tech__item is-active" data-step="0">
+              <span class="num">01</span>
+              <div><h3>Cushion lattice</h3><p>3D-printed foam lattice. 87% energy return, tuned zone by zone.</p></div>
+            </li>
+            <li class="tech__item" data-step="1">
+              <span class="num">02</span>
+              <div><h3>Carbon plate</h3><p>Full-length carbon spoon plate for explosive propulsion with every stride.</p></div>
+            </li>
+            <li class="tech__item" data-step="2">
+              <span class="num">03</span>
+              <div><h3>Grip technology</h3><p>Pink-pod rubber outsole with all-surface traction for total control.</p></div>
+            </li>
+          </ol>
+          <div class="tech__progress"><i></i></div>
+        </div>
+        <div class="tech__visual">
+          <div class="tech__glow"></div>
+          <div class="tech__ring"></div>
+          <img class="tech__shoe" src="assets/img/hero-exploded.webp" alt="" loading="lazy">
+          <div class="tech__lens">
+            <img class="is-active" src="assets/img/tech-cushion.webp" alt="Cushion lattice close-up" loading="lazy">
+            <img src="assets/img/tech-carbon.webp" alt="Carbon plate close-up" loading="lazy">
+            <img src="assets/img/tech-grip.webp" alt="Grip outsole close-up" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTIONS ============ -->
+    <section class="section" id="collections">
+      <div class="container section-head">
+        <div>
+          <p class="mono" data-reveal>// The collection</p>
+          <h2 class="section-title" data-split>Built for <span class="mint">what’s next.</span></h2>
+        </div>
+        <div style="display:flex;align-items:center;gap:30px;flex-wrap:wrap" data-reveal>
+          <p class="section-sub">Twelve silhouettes. Runners, lifestyle, trail and court — each one lit from within.</p>
+          <div class="rail-controls">
+            <button data-rail="-1" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12H5m6-6-6 6 6 6"/></svg></button>
+            <button data-rail="1" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="rail" data-rail-track data-reveal></div>
+      <div class="container" style="text-align:center;margin-top:30px" data-reveal>
+        <a href="shop.html" class="btn btn--ghost" data-magnetic>View all sneakers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section story" id="story">
+      <div class="container">
+        <p class="mono" data-reveal>// Our story</p>
+        <p class="story__text" data-story>
+          We started with one question: what if a shoe could feel like <span class="hl">electricity</span>?
+          Three years, <span class="hl-p">400 prototypes</span> and one obsessive lab later, VOLT is our answer —
+          sneakers built for the ones who <span class="hl">move different</span>.
+        </p>
+        <div class="stats">
+          <div class="stat" data-reveal style="--d:0s"><strong data-count-to="87">0</strong><sup>%</sup><span class="mono">Energy return</span></div>
+          <div class="stat" data-reveal style="--d:.1s"><strong data-count-to="198">0</strong><sup>g</sup><span class="mono">Weight · US 9</span></div>
+          <div class="stat" data-reveal style="--d:.2s"><strong data-count-to="400">0</strong><sup>+</sup><span class="mono">Prototypes tested</span></div>
+          <div class="stat" data-reveal style="--d:.3s"><strong data-count-to="30">0</strong><sup>day</sup><span class="mono">Hassle-free returns</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="container" style="padding-bottom:40px">
+      <div class="cta-band" data-reveal="scale">
+        <div style="position:relative">
+          <p class="mono">// Limited drop · Hot Pink</p>
+          <h2>Glow loud.<br><span class="pink">Run louder.</span></h2>
+          <a href="product.html?id=volt-runner-x1&color=pink" class="btn btn--mint" data-magnetic>Get the Hot Pink X1 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="cta-band__img"><img src="assets/img/runner-x1.webp" alt="Volt Runner X1 in Hot Pink" loading="lazy"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>

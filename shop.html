@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/shop.js"></script>
+  <title>Shop all sneakers — VOLT</title>
+  <meta name="description" content="Next gen performance sneakers for a brighter tomorrow. Runners, lifestyle, trail and basketball.">
+</head>
+<body data-page="shop">
+  <main class="container">
+    <header class="shop-head">
+      <div>
+        <p class="mono" data-reveal>// All sneakers</p>
+        <h1 data-split>Built for <span class="mint">what’s next.</span></h1>
+      </div>
+      <p data-reveal style="--d:.2s">Next gen performance sneakers for a brighter tomorrow.</p>
+      <div class="shop-tools" data-reveal style="--d:.3s">
+        <button class="btn btn--ghost filter-toggle" data-filters-open style="--h:48px;padding:0 20px;font-size:16px">Filters</button>
+        <span class="count" data-count>12 products</span>
+        <label class="select">
+          <span class="sr-only">Sort by</span>
+          <select data-sort>
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="name">Name A–Z</option>
+          </select>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m6 9 6 6 6-6"/></svg>
+        </label>
+      </div>
+    </header>
+
+    <div class="shop-layout">
+      <aside class="filters" aria-label="Filters"></aside>
+      <section class="grid" aria-live="polite"></section>
+    </div>
+  </main>
+  <div class="drawer-scrim" data-filters-close style="z-index:84"></div>
+  <footer id="site-footer"></footer>
+</body>
+</html>
